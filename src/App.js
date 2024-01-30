@@ -85,11 +85,11 @@ function Item({ item }) {
 
   return (
     <li>
-      <input type="checkbox" />
+      <input type="checkbox" onClick={() => setIsPacked(!isPacked)} />
       <span
         style={isPacked ? { textDecoration: `line-through` } : {}}
       >{`${item.quantity} ${item.description}`}</span>
-      <button onClick={() => setIsPacked(!isPacked)}>❌</button>
+      <button>❌</button>
     </li>
   );
 }
