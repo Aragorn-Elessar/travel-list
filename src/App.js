@@ -89,7 +89,7 @@ function Item({ item }) {
       <span
         style={isPacked ? { textDecoration: `line-through` } : {}}
       >{`${item.quantity} ${item.description}`}</span>
-      <button onClick={() => setIsPacked(() => !isPacked)}>❌</button>
+      <button onClick={() => setIsPacked(!isPacked)}>❌</button>
     </li>
   );
 }
